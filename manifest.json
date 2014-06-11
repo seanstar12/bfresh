@@ -3,7 +3,7 @@
       "js": [
         "script.js"
       ],
-      "matches": [ "http://boards.4chan.org/b/", "http://boards.4chan.org/b" ],
+      "matches": [ "http://boards.4chan.org/*/", "http://boards.4chan.org/b" ],
       "run_at": "document_start"
    } ],
    "description": "B-Freshes at bottom of the page because you've got more important things to do.",
@@ -12,5 +12,5 @@
    },
    "name": "B-Fresh Pro Platinum Elite Plus Unlocked",
    "manifest_version": 2,
- 	 "version": "1.2"
+ 	 "version": "1.3"
 }
