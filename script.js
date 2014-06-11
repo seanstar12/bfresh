@@ -51,7 +51,7 @@ function enable() {
     if (totalHeight <= currentScroll + visibleHeight ) {
       window.location = window.location.href;
     }
-  }, 100);
+  }, 80);
 };
 
 window.addEventListener('DOMContentLoaded', enable, false);
