@@ -3,7 +3,6 @@ function enable() {
   aids.style.height = '400px';
   aids.style.fontSize = '80px';
   aids.id = 'bfresh';
-  aids.innerHTML = "Keep Scrolling For Justice";
   document.body.appendChild(aids);
 
   setInterval( function() {
