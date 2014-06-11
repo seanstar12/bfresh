@@ -46,6 +46,7 @@ function enable() {
       }
       document.getElementById('bfresh').innerHTML = temp + "%";    
     } else {
+      document.getElementById('bfreshProgress').style.width = "100%";    
       document.getElementById('bfresh').innerHTML = "Refreshing Page...";    
     }
     if (totalHeight <= currentScroll + visibleHeight ) {
