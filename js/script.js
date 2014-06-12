@@ -6,7 +6,7 @@
 
 function enable() {
   addProgressBar();
-  setInterval( function() {
+  var bFresh = setInterval( function() {
     var totalHeight, currentScroll, visibleHeight;
         
     if (document.documentElement.scrollTop) { 
@@ -30,6 +30,7 @@ function enable() {
       document.getElementById('bfresh').innerHTML = "Refreshing Page...";    
     }
     if (totalHeight <= currentScroll + visibleHeight ) {
+      clearInterval(bFresh);
       window.location = window.location.href;
     }
   }, 80);
