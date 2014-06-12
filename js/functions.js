@@ -26,9 +26,39 @@ var imageControl = {
   }
 }
 
+function link(text,trigger) {
+  this.text = text;
+  this.trigger = trigger;
+  this.create();
+  this.add();
+}
+
+link.prototype.create = function() {
+  var link = document.createElement('a');
+  link.innerHTML = this.text;
+  link.style.paddingRight='5px';
+  link.id = 'bfresh_'+this.text;
+  link.onclick = function(){
+    this.trigger();
+  }.bind(this);
+  this.elm = link;
+}
+
+link.prototype.add = function() {
+  var nav = document.getElementsByClassName('navLinks')[1];
+  nav.appendChild(this.elm);
+}
+
 /*
 *  General Functions
 */
+
+function addLink() { 
+  new link('Expand',imageControl.expandAll);
+  new link('Contract',imageControl.contractAll);
+}
+
+
 function contractWebm(a){ 
   var b;
   a.removeEventListener("click",ImageExpansion.collapseWebm,!1);
