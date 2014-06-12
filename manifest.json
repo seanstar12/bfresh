@@ -1,18 +1,31 @@
 {
-   "content_scripts": [ {
+  "name": "B-Fresh Pro Platinum Elite Plus Unlocked",
+  "short_name": "BFresh P.P.E.P.U.",
+  "manifest_version": 2,
+  "version": "1.6",
+  "description": "B-Freshes at bottom of the page because you've got more important things to do.", 
+  "icons": {
+    "64": "bfresh64.png",
+    "128": "bfresh128.png"
+  },
+  "content_scripts": [ 
+    {
       "js": [
-        "script.js"
+        "js/script.js",
+        "js/onStart.js"
       ],
       "matches": [ "http://boards.4chan.org/*/" ],
       "run_at": "document_start"
-   } ],
-   "description": "B-Freshes at bottom of the page because you've got more important things to do.",
-   "icons": {
-      "64": "bfresh64.png",
-      "128": "bfresh128.png"
-   },
-   "name": "B-Fresh Pro Platinum Elite Plus Unlocked",
-   "short_name": "BFresh P.P.E.P.U.",
-   "manifest_version": 2,
- 	 "version": "1.6"
+    },
+    {
+      "js": [
+        "js/onStart.js"
+      ],
+      "matches": [ "http://boards.4chan.org/*/*" ],
+      "run_at": "document_start"
+    } 
+  ],
+  "web_accessible_resources": [
+    "js/*"
+  ]
 }
