@@ -2,7 +2,7 @@
   "name": "B-Fresh Pro Platinum Elite Plus Unlocked",
   "short_name": "BFresh P.P.E.P.U.",
   "manifest_version": 2,
-  "version": "1.8",
+  "version": "1.9",
   "description": "B-Freshes at bottom of the page because you've got more important things to do.", 
   "icons": {
     "64": "bfresh64.png",
@@ -14,14 +14,14 @@
         "js/script.js",
         "js/onStart.js"
       ],
-      "matches": [ "http://boards.4chan.org/*/" ],
+      "matches": [ "https://boards.4chan.org/*/", "http://boards.4chan.org/*/" ],
       "run_at": "document_start"
     },
     {
       "js": [
         "js/onStart.js"
       ],
-      "matches": [ "http://boards.4chan.org/*/*" ],
+      "matches": [ "https://boards.4chan.org/*/", "http://boards.4chan.org/*/" ],
       "run_at": "document_start"
     }, 
     {
@@ -30,7 +30,7 @@
         "js/functions.js",
         "js/onEnd.js"
       ],
-      "matches": [ "http://boards.4chan.org/*/*" ],
+      "matches": [ "https://boards.4chan.org/*/", "http://boards.4chan.org/*/" ],
       "run_at": "document_end"
     } 
   ],
