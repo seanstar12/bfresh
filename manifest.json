@@ -1,9 +1,9 @@
 {
-  "name": "B-Fresh Pro Platinum Elite Plus Unlocked",
-  "short_name": "BFresh P.P.E.P.U.",
+  "name": "Dubs Getter Pro (4Chan)",
+  "short_name": "DubsGet",
   "manifest_version": 2,
-  "version": "1.9",
-  "description": "B-Freshes at bottom of the page because you've got more important things to do.", 
+  "version": "1.13",
+  "description": "Guaranteed Dubs Everytime, None of the Time",
   "icons": {
     "64": "bfresh64.png",
     "128": "bfresh128.png"
@@ -26,7 +26,6 @@
     }, 
     {
       "js": [
-        "js/extension.856.js",
         "js/functions.js",
         "js/onEnd.js"
       ],

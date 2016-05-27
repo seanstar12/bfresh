@@ -40,7 +40,7 @@ function addProgressBar() {
   
   var progressBar = document.createElement('div');
   progressBar.style.width = '100%';
-  progressBar.style.backgroundColor = '#A20F0F';
+  progressBar.style.backgroundColor = '#00D0FF';
   progressBar.id = 'bfreshBar';
 
   var progressBarProgress = document.createElement('div');
@@ -56,7 +56,7 @@ function addProgressBar() {
   progressBarText.id = 'bfresh';
  
   var buffer = document.createElement('div');
-  buffer.style.height = '275px';
+  buffer.style.height = '300px';
   buffer.id = 'bFreshBuffer';
  
   document.body.appendChild(progressBar);

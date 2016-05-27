@@ -1,4 +1,4 @@
-# B-Fresh Pro Platinum Elite Plus Unlocked
+# Dubs Getter Pro
 
 A super simple 4chan refresher built to make life easier. Also, because we are not savages.
 
