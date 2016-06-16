@@ -2,11 +2,17 @@
   "name": "Dubs Getter Pro (4Chan)",
   "short_name": "DubsGet",
   "manifest_version": 2,
-  "version": "1.13",
+  "version": "1.14",
   "description": "Guaranteed Dubs Everytime, None of the Time",
   "icons": {
     "64": "bfresh64.png",
     "128": "bfresh128.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "dubsgetter@4chan.org",
+      "strict_min_version": "45.0"
+    }
   },
   "content_scripts": [ 
     {
@@ -14,22 +20,15 @@
         "js/script.js",
         "js/onStart.js"
       ],
-      "matches": [ "https://boards.4chan.org/*/", "http://boards.4chan.org/*/" ],
+      "matches": [ "*://boards.4chan.org/*/" ],
       "run_at": "document_start"
     },
-    {
-      "js": [
-        "js/onStart.js"
-      ],
-      "matches": [ "https://boards.4chan.org/*/", "http://boards.4chan.org/*/" ],
-      "run_at": "document_start"
-    }, 
     {
       "js": [
         "js/functions.js",
         "js/onEnd.js"
       ],
-      "matches": [ "https://boards.4chan.org/*/", "http://boards.4chan.org/*/" ],
+      "matches": [ "*://boards.4chan.org/*/" ],
       "run_at": "document_end"
     } 
   ],
