@@ -56,7 +56,7 @@ function addProgressBar() {
   progressBarText.id = 'bfresh';
  
   var buffer = document.createElement('div');
-  buffer.style.height = '300px';
+  buffer.style.height = '400px';
   buffer.id = 'bFreshBuffer';
  
   document.body.appendChild(progressBar);
