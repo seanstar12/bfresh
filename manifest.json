@@ -2,7 +2,7 @@
   "name": "Dubs Getter Pro (4Chan)",
   "short_name": "DubsGet",
   "manifest_version": 2,
-  "version": "1.15",
+  "version": "1.16",
   "description": "Guaranteed Dubs Everytime, None of the Time",
   "icons": {
     "64": "bfresh64.png",
@@ -13,12 +13,12 @@
   ],
   "content_scripts": [ 
     {
-      "js": [ "js/script.js" ],
+      "js": [ "js/contentscript.js" ],
       "matches": [ "*://boards.4chan.org/*/" ],
       "run_at": "document_start"
     }
   ],
   "web_accessible_resources": [
-    "js/script"
+    "js/script.js"
   ]
 }
